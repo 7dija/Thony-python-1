@@ -6,20 +6,13 @@ for value in range(len(values)):
         for i in range(value+1,len(values)):
             if values[i] == values[value]:
                 count += 1
-        if count > 1:
-            print(values[value], "repated" , count , "times")
+        if count >= 1:
+            dic = ({values[value] : count})
+            
+
         
         d.append(values[value])
+        print(dic)
 
 
-
-           
-    
-    
-        
-        
-            
-
-            
-        
-        
+ 
