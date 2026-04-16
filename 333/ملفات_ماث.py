@@ -1,0 +1,28 @@
+files = ["C:/Users/DELL/Downloads/Math_27.txt",
+         "C:/Users/DELL/Downloads/Math_20.txt",
+         "C:/Users/DELL/Downloads/Math_21.txt",
+         "C:/Users/DELL/Downloads/Math_18.txt"]
+
+for i in files:
+    infile = open(i, "r")
+    
+    title = infile.readline().strip()
+    number = infile.readline().strip()
+    discription = ""
+    Example = ""
+    
+    
+    line = infile.readline().strip()
+    while "Example" not in line:
+        discription += line + "\n"
+        line = infile.readline().strip()
+    
+    for line in infile:
+        Example += line
+    
+
+    print("name of file is: ",title)
+    print("number of the file is: " , number)
+    print("discription of the file is: " , discription)
+    print("Example of the file is: " , Example)
+
